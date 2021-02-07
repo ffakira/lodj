@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <img class="pos-top" alt="Vue logo" :src="require('@/assets/img/scroll-top.png')">
     <h1>Legends of Divine Justice</h1>
+    <p>Quick find code: 320-321-201-65490980</p>
     <div class="container__hello pt-2">
 
       <div>
@@ -17,6 +17,26 @@
       </div>
 
       <div>
+        <img :src="require('@/assets/img/rules_banner.png')" alt="">
+      </div>
+      <div class="text-left">
+        <h3>Rules</h3>
+        <p>Follow Jagex rules, being in our clan does not mean that the rules dont apply. Jagex rules are expected to be obeyed within our clan channel as well as on 
+          forums. We strongly recommend using the "report abuse" button if jagex rules are broken by a clan member regardless of their rank. This includes inappropriate 
+          language.</p>
+        <router-link class="text-bold" to="/rules">read more</router-link>
+      </div>
+
+      <div>
+        <img :src="require('@/assets/img/staff_banner.png')" alt="">
+      </div>
+      <div class="text-left">
+        <h3>Clan Moderators</h3>
+        <p>View our full list of Clan Moderators in LODJ.</p>
+        <router-link to="/clan-mod" class="text-bold">read more</router-link>
+      </div>
+
+      <div>
         <a href="https://discord.gg/AUMryRZkgS" target="_blank">
           <img :src="require('@/assets/img/discord_banner.png')" alt="discord_banner">
         </a>
@@ -25,14 +45,28 @@
         <h3>LODJ On Discord</h3>
         <p>Want to be part of LODJ discord family? Just visit our Friend Chat, and ask one of our rank members to invite you to our Discord.</p>
       </div>
-
     </div>
-    <img class="pos-bot" alt="Vue logo" :src="require('@/assets/img/scroll-top.png')">
   </div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .container__hello::before, .container__hello::after {
+    background: url('../assets/img/scroll-top.png') no-repeat center top;
+    content: '';
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .container__hello::before {
+    top: 180px;
+  }
+
+  .container__hello::after {
+    top: 1060px;
+  }
+
 .hello {
   padding-bottom: 100px;
 }
@@ -83,14 +117,15 @@ h1 {
 
 .pos-top {
   top: 180px;
-  right: 576px;
+  right: 570px;
   position: absolute;
 }
 
 .pos-bot {
   position: absolute;
-  right: 576px;
-  top: 680px;
+  right: 570px;
+  top: 910px;
+  padding-bottom: 20px;
 }
 
 h3 {

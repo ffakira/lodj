@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" class="base-scroll"/>
+    <HelloWorld class="base-scroll"/>
   </div>
 </template>
 

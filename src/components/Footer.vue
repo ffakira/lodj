@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <span>&copy; 2021 LODJ </span>
+        <!-- <span>&copy; 2021 LODJ </span> -->
     </div>
 </template>
 
