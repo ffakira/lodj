@@ -28,7 +28,8 @@ html, body {
   padding: 0;
 }
 #app {
-  height: 130vh;
+  height: 170vh;
+  /* background: url('./assets/img/wallpaper.png') repeat-y scroll center top black; */
   background: url('./assets/img/wallpaper.png') repeat-y scroll center top black;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

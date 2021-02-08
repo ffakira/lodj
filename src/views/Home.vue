@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld class="base-scroll"/>
+    <HelloWorld />
   </div>
 </template>
 
@@ -15,9 +15,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  .base-scroll {
-    background: url('../assets/img/scroll-base.png') repeat-y top center;
-  }
-</style>
